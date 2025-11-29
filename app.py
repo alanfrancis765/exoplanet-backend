@@ -27,9 +27,8 @@ FEATURE_COLUMNS = [
 
 
 @app.route("/", methods=["GET"])
-def index():
-    return render_template("index.html")
-
+def root():
+    return jsonify({"status": "API Running "})
 
 # -------------------------------
 # SINGLE PREDICTION
