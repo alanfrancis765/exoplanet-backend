@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-MODEL_PATH = os.path.join("ML_model", "model_alan.pkl")
+MODEL_PATH = os.path.join("ML_Model", "model_alan.pkl")
 
 try:
     with open(MODEL_PATH, "rb") as f:
